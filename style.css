@@ -1,0 +1,52 @@
+body {
+  margin: 8px 0 8px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left {
+  width: calc((100%-4%)/3);
+  height: 660px;
+  background-color: lime;
+  align-self: center;
+}
+.middle {
+  width: calc((100%-4%)/3);
+  flex: 1;
+  height: 660px;
+  background-color: yellow;
+}
+.right {
+  width: calc((100%-4%)/3);
+  flex: 1;
+  height: 660px;
+  background-color: red;
+}
+@media (min-width: 700px) and (max-width: 799px){
+  body {
+    margin: 0;
+  }
+  #container {
+    width: 600px;
+    height: 100%;
+  }
+}
+@media (max-width: 699px) {
+  body {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+    }
+.left {
+    align-self: center;
+    width: 100%;
+}
+.middle {
+  align-self: center;
+  width: 100%;
+}
+.right {
+  align-self: center;
+  width: 100%;
+}
+  }
